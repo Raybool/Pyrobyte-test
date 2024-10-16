@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--foreground-color);
+  padding: 40px 32px 24px;
+  width: 360px;
+  border: 2px solid var(--light-blue-color);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(43, 107, 243, 0.08);
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-bottom: 40px;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

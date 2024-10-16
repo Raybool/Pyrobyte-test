@@ -6,32 +6,26 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
+export type StyleType = 'link' | 'text' | 'link_underline';
+
 type Props = {
   href: Url;
   text: string;
   style: 'link' | 'text' | 'link_underline';
 };
 
-const getStyle = (style: Props['style']) => {
-  switch (style) {
-    case 'link':
-      return styles.link;
-    case 'text':
-      return styles.text;
-    case 'link_underline':
-      return styles.lineUnderline;
-  }
+const variantStyle: Record<Props['style'], string> = {
+  link: styles.link,
+  text: styles.text,
+  link_underline: styles.lineUnderline,
 };
 
-export const Link: React.FC<Props> = ({ href, text, style }) => {
-  const compStyle = getStyle(style);
-  return (
-    <LinkNext className={compStyle} href={href}>
-      {text}
+export const Link: React.FC<Props> = ({ href, text, style }) => (
+  <LinkNext className={variantStyle[style]} href={href}>
+    {text}
 
-      <Box visible={style === 'link'}>
-        <Arrow />
-      </Box>
-    </LinkNext>
-  );
-};
+    <Box visible={style === 'link'}>
+      <Arrow />
+    </Box>
+  </LinkNext>
+);

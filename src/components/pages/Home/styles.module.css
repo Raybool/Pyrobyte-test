@@ -3,15 +3,22 @@
   flex-direction: column;
 }
 
-.main {
+.mainContainer {
+  margin-top: 81px;
+}
+
+.mainBox {
   display: flex;
+  flex-direction: column;
   padding: 36px 32px 32px 102px;
+  position: relative;
 }
 
 .textBox {
   display: flex;
   flex-direction: column;
   width: 376px;
+  margin-bottom: 80px;
 }
 
 .title {
@@ -20,4 +27,16 @@
 
 .subtitle {
   margin-bottom: 30px;
+}
+
+.videoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.rightBox {
+  position: absolute;
+  right: 32px;
+  top: 36px;
 }

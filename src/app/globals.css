@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --foreground-color: #fff;
   --background-color: #f1f4fc;
   --yellow-color: #ffdd2d;
   --blue-color: #2b6bf3;
@@ -12,6 +13,7 @@
   --green-color: #27ae60;
   --light-green-color: #27ae60;
   --grey-text-color: #666666;
+  --placeholder-color: #c4cee5;
 }
 
 @font-face {
@@ -82,6 +84,20 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: var(--grey-text-color);
+}
+
+span {
+  font-family: 'Intro Bold';
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--placeholder-color);
+}
+
+button {
+  font-family: 'Intro Regular';
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .txt-small {
