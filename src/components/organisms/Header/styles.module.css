@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 8px 32px;
+  border-bottom: 1px solid rgba(43, 107, 243, 0.16);
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+.link {
+  font-family: 'Intro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--blue-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.link:hover {
+  opacity: 70%;
+}
+
+.text {
+  font-family: 'Intro Book';
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-text-color);
+}
+
+.text:hover {
+  opacity: 70%;
+  border-bottom: 1px dashed var(--light-blue-color);
+}
+
+.lineUnderline {
+  font-family: 'Intro Regular';
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--blue-color);
+  text-decoration: underline;
+  text-decoration-color: var(--blue-color);
+}
+
+.lineUnderline:hover {
+  opacity: 70%;
+  text-decoration: none;
+}

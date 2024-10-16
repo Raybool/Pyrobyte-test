@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  padding: 36px 32px 32px 102px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+}
+
+.title {
+  margin-bottom: 34px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}

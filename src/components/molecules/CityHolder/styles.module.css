@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.container:hover {
+  opacity: 70%;
+}
+
+.title:hover {
+  border-bottom: 1px dashed var(--light-blue-color);
+}

@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #f1f4fc;
+  --yellow-color: #ffdd2d;
+  --blue-color: #2b6bf3;
+  --dark-blue-color: #1d253c;
+  --light-blue-color: #c2d2f4;
+  --red-color: #fd466e;
+  --green-color: #27ae60;
+  --light-green-color: #27ae60;
+  --grey-text-color: #666666;
+}
+
+@font-face {
+  font-family: 'Intro Bold';
+  src:
+    local('Intro Bold'),
+    url(/fonts/Intro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Intro Regular';
+  src:
+    local('Intro Regular'),
+    url(/fonts/Intro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Intro Book';
+  src:
+    local('Intro Book'),
+    url(/fonts/Intro-Book.ttf) format('truetype');
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--dark-blue-color);
+  background: var(--background-color);
+}
+
+h1 {
+  font-family: 'Intro Bold';
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  font-family: 'Intro Bold';
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h3 {
+  font-family: 'Intro Regular';
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h4 {
+  font-family: 'Intro Book';
+  font-size: 22px;
+  line-height: 32px;
+}
+
+h5 {
+  font-family: 'Intro Regular';
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p {
+  font-family: 'Intro Book';
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-text-color);
+}
+
+.txt-small {
+  font-family: 'Intro Book';
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.txt-menu {
+  font-family: 'Intro Book';
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.txt-cost {
+  font-family: 'Intro Regular';
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
