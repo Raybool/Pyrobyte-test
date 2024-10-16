@@ -5,9 +5,7 @@ import React, { useState } from 'react';
 
 import styles from './styles.module.css';
 
-type Props = {};
-
-export const InputSearch: React.FC<Props> = ({}) => {
+export const InputSearch: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHover, setIsHover] = useState(false);
 
