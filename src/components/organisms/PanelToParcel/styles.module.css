@@ -16,6 +16,10 @@
   margin-bottom: 20px;
 }
 
+.selectorBox {
+  margin-bottom: 34px;
+}
+
 .inputBox {
   display: flex;
   flex-direction: column;

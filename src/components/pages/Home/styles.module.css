@@ -5,13 +5,17 @@
 
 .mainContainer {
   margin-top: 81px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .mainBox {
   display: flex;
   flex-direction: column;
-  padding: 36px 32px 32px 102px;
+  padding: 66px 32px 32px 102px;
   position: relative;
+  width: 100%;
 }
 
 .textBox {
@@ -19,6 +23,11 @@
   flex-direction: column;
   width: 376px;
   margin-bottom: 80px;
+}
+
+.image {
+  position: absolute;
+  top: 152px;
 }
 
 .title {
@@ -39,4 +48,28 @@
   position: absolute;
   right: 32px;
   top: 36px;
+}
+
+.marketingBox {
+  display: flex;
+  flex-direction: column;
+  padding-top: 98px;
+  padding-bottom: 80px;
+  align-items: center;
+}
+
+.marketingTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 754px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.marketingCardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
 }

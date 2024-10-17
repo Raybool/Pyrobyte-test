@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 24px 24px 20px;
+  background-color: #f8faff;
+  border: 1px solid var(--light-blue-color);
+  border-radius: 8px;
+}
+
+.container:hover {
+  border-width: 2px;
+  border-color: var(--blue-color);
+}
+
+.icon {
+  margin-top: 18px;
+}

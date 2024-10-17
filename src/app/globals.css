@@ -14,6 +14,8 @@
   --light-green-color: #27ae60;
   --grey-text-color: #666666;
   --placeholder-color: #c4cee5;
+  --switch-color: #eff4ff;
+  --subtext-color: rgba(29, 37, 60, 0.48);
 }
 
 @font-face {
@@ -116,6 +118,10 @@ button {
   font-family: 'Intro Regular';
   font-size: 32px;
   line-height: 40px;
+}
+
+.subtext {
+  color: var(--subtext-color);
 }
 
 @layer utilities {

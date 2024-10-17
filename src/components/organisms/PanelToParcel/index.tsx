@@ -3,6 +3,7 @@
 import { Button } from '@/components/atoms/buttons/Button';
 import { Close } from '@/components/atoms/icons/Close';
 import { Input } from '@/components/molecules/Input';
+import { SelectorDelivery } from '@/components/molecules/SelectorDelivery';
 import { TypeDelivery } from '@/types';
 import { useFormik } from 'formik';
 import React, { useState } from 'react';
@@ -12,7 +13,7 @@ import styles from './styles.module.css';
 type Props = {};
 
 export const PanelToParcel: React.FC<Props> = () => {
-  const [typeDelivery, setTypeDelivery] = useState<TypeDelivery>('medium');
+  const [typeDelivery, setTypeDelivery] = useState<TypeDelivery>('light');
 
   const formik = useFormik({
     initialValues: {
@@ -31,7 +32,9 @@ export const PanelToParcel: React.FC<Props> = () => {
         {/* TODO: add tooltip */}
       </div>
 
-      {/* <SelectorDelivery /> */}
+      <div className={styles.selectorBox}>
+        <SelectorDelivery activeType={typeDelivery} onClick={setTypeDelivery} />
+      </div>
 
       <div className={styles.inputBox}>
         <Input
