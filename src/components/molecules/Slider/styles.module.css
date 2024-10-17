@@ -1,0 +1,13 @@
+.container {
+  width: 1104px;
+}
+
+.image {
+  filter: grayscale();
+  opacity: 30%;
+}
+
+.image:hover {
+  filter: none;
+  opacity: 100%;
+}

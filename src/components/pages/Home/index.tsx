@@ -4,8 +4,10 @@ import { Case } from '@/components/atoms/icons/Case';
 import { Courier } from '@/components/atoms/icons/Courier';
 import { Support } from '@/components/atoms/icons/Support';
 import { Card } from '@/components/molecules/Card';
+import { Slider } from '@/components/molecules/Slider';
 import { Header } from '@/components/organisms/Header';
 import { PanelToParcel } from '@/components/organisms/PanelToParcel';
+import { sliderData } from '@/constants/ui';
 import Image from 'next/image';
 import React from 'react';
 
@@ -85,6 +87,12 @@ export const Home: React.FC = () => (
       </div>
 
       <SeparateLine />
+
+      <div className={styles.sliderBox}>
+        <h1>Our Partners</h1>
+
+        <Slider data={sliderData} spaceBetween={80} slidesPerView={5} />
+      </div>
     </main>
   </div>
 );

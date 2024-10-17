@@ -1,6 +1,5 @@
-import lock from '@/components/atoms/icons/lock.svg';
+import { Lock as LockImage } from '@/components/atoms/icons/Lock';
 import { Url } from '@/types';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -12,6 +11,6 @@ type Props = {
 
 export const Lock: React.FC<Props> = ({ href }) => (
   <Link className={styles.link} href={href}>
-    <Image src={lock} alt="Login" />
+    <LockImage />
   </Link>
 );
