@@ -62,3 +62,78 @@ export const sliderData: SliderDataType = [
     width: 105,
   },
 ];
+
+export const sliderDataPayment: SliderDataType = [
+  {
+    src: '/images/google-pay.png',
+    alt: 'Google Pay',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/sofort.png',
+    alt: 'Sofort',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/union-pay.png',
+    alt: 'Union Pay',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/visa.png',
+    alt: 'VISA',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/mastercard.png',
+    alt: 'Mastercard',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/american-express.png',
+    alt: 'American Express',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/google-pay.png',
+    alt: 'Google Pay',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/sofort.png',
+    alt: 'Sofort',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/union-pay.png',
+    alt: 'Union Pay',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/visa.png',
+    alt: 'VISA',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/mastercard.png',
+    alt: 'Mastercard',
+    width: 84,
+    height: 56,
+  },
+  {
+    src: '/images/american-express.png',
+    alt: 'American Express',
+    width: 84,
+    height: 56,
+  },
+];

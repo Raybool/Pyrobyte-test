@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  width: 374px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view {
+  border-radius: 8px;
+}
+
+.playButton {
+  position: absolute;
+}
+
+.playButton:hover {
+  transform: scale(1.375);
+}

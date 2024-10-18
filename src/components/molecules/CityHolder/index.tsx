@@ -8,9 +8,9 @@ type Props = {
 };
 
 export const CityHolder: React.FC<Props> = ({ place }) => (
-  <div className={styles.container}>
+  <button className={styles.container}>
     <MapMark />
 
     <p className={styles.title}>{place}</p>
-  </div>
+  </button>
 );

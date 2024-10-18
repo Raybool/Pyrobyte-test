@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  padding: 8px 0;
+  width: 100%;
+  border-radius: 32px;
 }
 
 .default {
   background-color: #2b6bf3;
-  padding: 8px 0;
-  width: 100%;
   color: var(--foreground-color);
-  border-radius: 32px;
 }
 
 .default:hover {
@@ -25,4 +25,16 @@
   font-size: 16px;
   line-height: 24px;
   color: #999999;
+  padding: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.yellow {
+  background-color: #ffdd2d;
+  color: var(--dark-blue-color);
+}
+
+.yellow:hover {
+  color: var(--foreground-color);
 }

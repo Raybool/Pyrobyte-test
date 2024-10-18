@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Intro Book';
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container:hover {
+  opacity: 70%;
+}
+
+.default {
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  background-color: var(--foreground-color);
+  border: 1px solid #dde7fd;
+}
+
+.noBackground {
+  gap: 12px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.noBackground:hover {
+  text-decoration: underline dashed var(--light-blue-color);
+}

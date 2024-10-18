@@ -4,10 +4,30 @@
   gap: 34px;
   width: 100%;
   align-items: center;
+  background-color: var(--foreground-color);
+}
+
+.containerMadeBy {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  width: 100%;
+  align-items: center;
 }
 
 .line {
   height: 1px;
+  flex: 1;
+  background-color: var(--light-blue-color);
+}
+
+.text {
+  font-family: 'Intro Regular';
+  color: var(--light-blue-color);
+}
+
+.twoLine {
+  height: 2px;
   flex: 1;
   background-color: var(--light-blue-color);
 }

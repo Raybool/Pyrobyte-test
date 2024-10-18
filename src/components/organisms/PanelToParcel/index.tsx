@@ -4,6 +4,7 @@ import { Button } from '@/components/atoms/buttons/Button';
 import { Close } from '@/components/atoms/icons/Close';
 import { Input } from '@/components/molecules/Input';
 import { SelectorDelivery } from '@/components/molecules/SelectorDelivery';
+import { Tooltip } from '@/components/molecules/Tooltip';
 import { TypeDelivery } from '@/types';
 import { useFormik } from 'formik';
 import React, { useState } from 'react';
@@ -13,7 +14,7 @@ import styles from './styles.module.css';
 type Props = {};
 
 export const PanelToParcel: React.FC<Props> = () => {
-  const [typeDelivery, setTypeDelivery] = useState<TypeDelivery>('light');
+  const [typeDelivery, setTypeDelivery] = useState<TypeDelivery>('medium');
 
   const formik = useFormik({
     initialValues: {
@@ -29,7 +30,7 @@ export const PanelToParcel: React.FC<Props> = () => {
       <div className={styles.titleBox}>
         <h3>Send a Parcel</h3>
 
-        {/* TODO: add tooltip */}
+        <Tooltip text="A commission is a piece of work that someone is asked to do and is paid for." />
       </div>
 
       <div className={styles.selectorBox}>

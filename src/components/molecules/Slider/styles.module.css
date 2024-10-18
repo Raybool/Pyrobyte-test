@@ -1,13 +1,24 @@
 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 54px;
+}
+
+.sliderBox {
   width: 1104px;
 }
 
-.image {
+.grey {
   filter: grayscale();
   opacity: 30%;
 }
 
-.image:hover {
+.grey:hover {
   filter: none;
   opacity: 100%;
+}
+
+.right {
+  transform: rotate(180deg);
 }

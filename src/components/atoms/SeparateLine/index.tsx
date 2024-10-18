@@ -12,3 +12,13 @@ export const SeparateLine: React.FC = () => (
     <div className={styles.line}></div>
   </div>
 );
+
+export const MadeBySeparateLine: React.FC = () => (
+  <div className={styles.containerMadeBy}>
+    <div className={styles.twoLine}></div>
+
+    <p className={`${styles.text} txt-small`}>Made by</p>
+
+    <div className={styles.line}></div>
+  </div>
+);

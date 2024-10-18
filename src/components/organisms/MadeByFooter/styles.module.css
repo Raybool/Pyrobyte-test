@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 84px 56px 64px;
+}
+
+.logo {
+  position: relative;
+  left: -17px;
+}

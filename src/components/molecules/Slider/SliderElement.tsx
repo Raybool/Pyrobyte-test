@@ -6,20 +6,20 @@ import styles from './styles.module.css';
 type Props = {
   src: string;
   alt: string;
-  index: number;
   width: number;
   height: number;
+  type: 'default' | 'grey';
 };
 
 export const SliderElement: React.FC<Props> = ({
   src,
   alt,
-  index,
   width,
   height,
+  type,
 }) => (
   <Image
-    className={styles.image}
+    className={type === 'grey' ? styles.grey : undefined}
     src={src}
     alt={alt}
     width={width}

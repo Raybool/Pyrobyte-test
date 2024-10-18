@@ -1,21 +1,29 @@
 import { Box } from '@/components/atoms/Box';
-import React, { ReactElement } from 'react';
+import React from 'react';
 
 import styles from './styles.module.css';
 
 type Props = {
   title: string;
-  icon?: ReactElement;
+  Icon: React.FC;
   text: string;
 };
 
-export const Card: React.FC<Props> = ({ title, icon, text }) => (
+export const Card: React.FC<Props> = ({ title, Icon, text }) => (
   <div className={styles.container}>
-    <h3>{title}</h3>
+    <h3 className={!!Icon ? styles.icon : undefined}>{title}</h3>
 
-    <Box className={styles.icon} visible={!!icon}>
-      {icon}
-    </Box>
+    <Icon />
+
+    <p>{text}</p>
+  </div>
+);
+
+export const CardNoBack: React.FC<Props> = ({ title, Icon, text }) => (
+  <div className={styles.containerNoBack}>
+    <Icon />
+
+    <h3 className={styles.title}>{title}</h3>
 
     <p>{text}</p>
   </div>
