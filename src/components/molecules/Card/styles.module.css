@@ -26,4 +26,27 @@
 .title {
   margin-top: 32px;
   margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.link {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+  opacity: 70%;
+}
+
+@media (max-width: 360px) {
+  .iconNoBack {
+    transform: scale(0.8);
+  }
+
+  .containerNoBack {
+    align-items: center;
+    text-align: center;
+  }
 }

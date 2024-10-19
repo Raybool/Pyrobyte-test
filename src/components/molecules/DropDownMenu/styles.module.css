@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+}
+
+.menu {
+  padding: 24px 16px 32px;
+  width: 274px;
+  background-color: var(--foreground-color);
+  position: absolute;
+  top: -30px;
+  right: -18px;
+  box-shadow: 0px 16px 16px 0px rgba(73, 99, 176, 0.16);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.headMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 44px;
+}

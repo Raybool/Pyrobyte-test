@@ -1,4 +1,6 @@
 import { Box } from '@/components/atoms/Box';
+import { Url } from '@/types';
+import Link from 'next/link';
 import React from 'react';
 
 import styles from './styles.module.css';
@@ -7,6 +9,7 @@ type Props = {
   title: string;
   Icon: React.FC;
   text: string;
+  link?: { href: Url; text: string };
 };
 
 export const Card: React.FC<Props> = ({ title, Icon, text }) => (
@@ -19,11 +22,21 @@ export const Card: React.FC<Props> = ({ title, Icon, text }) => (
   </div>
 );
 
-export const CardNoBack: React.FC<Props> = ({ title, Icon, text }) => (
+export const CardNoBack: React.FC<Props> = ({ title, Icon, text, link }) => (
   <div className={styles.containerNoBack}>
-    <Icon />
+    <div className={styles.iconNoBack}>
+      <Icon />
+    </div>
 
-    <h3 className={styles.title}>{title}</h3>
+    <h3 className={styles.title}>
+      {title}
+
+      {link && (
+        <Link href={link?.href}>
+          <h3 className={styles.link}>{link?.text}</h3>
+        </Link>
+      )}
+    </h3>
 
     <p>{text}</p>
   </div>

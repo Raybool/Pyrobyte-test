@@ -18,7 +18,8 @@ export const SelectorDelivery: React.FC<Props> = ({ activeType, onClick }) => (
       onClick={() => onClick('light')}
     >
       <OnFoot />
-      up to 10lb
+
+      <p className={styles.text}>up to 10lb</p>
     </button>
 
     <button
@@ -26,7 +27,8 @@ export const SelectorDelivery: React.FC<Props> = ({ activeType, onClick }) => (
       onClick={() => onClick('medium')}
     >
       <OnCar />
-      up to 130lb
+
+      <p className={styles.text}>up to 130lb</p>
     </button>
 
     <button
@@ -34,7 +36,8 @@ export const SelectorDelivery: React.FC<Props> = ({ activeType, onClick }) => (
       onClick={() => onClick('heavy')}
     >
       <OnTruck />
-      over 130lb
+
+      <p className={styles.text}>over 130lb</p>
     </button>
   </div>
 );

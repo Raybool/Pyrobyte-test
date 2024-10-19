@@ -22,3 +22,9 @@
 .right {
   transform: rotate(180deg);
 }
+
+@media (max-width: 360px) {
+  .sliderBox {
+    width: 360px;
+  }
+}

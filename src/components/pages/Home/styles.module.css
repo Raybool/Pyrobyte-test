@@ -72,6 +72,7 @@
 
 .marketingCardBox {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
@@ -105,6 +106,32 @@
   position: relative;
 }
 
+.whatWeDoCardBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 36px;
+}
+
+.whatWeDoImg {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.middleBox {
+  background-color: var(--background-color);
+  width: 100%;
+  border-top-left-radius: 320px;
+  border-bottom-left-radius: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 74px;
+  padding-bottom: 72px;
+}
+
 .sliderPaymentContainer {
   display: flex;
   flex-direction: column;
@@ -112,11 +139,6 @@
   gap: 46px;
   padding-top: 98px;
   padding-bottom: 82px;
-  background-color: var(--foreground-color);
-  width: 100%;
-}
-
-.whiteContainer {
   background-color: var(--foreground-color);
   width: 100%;
 }
@@ -134,32 +156,122 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 103px;
+  padding: 0 102px;
   border-top: 1px solid var(--light-blue-color);
 }
 
-.middleBox {
-  background-color: var(--background-color);
-  width: 100%;
-  border-top-left-radius: 320px;
-  border-bottom-left-radius: 320px;
+.imageSmall {
+  display: none;
+}
+
+.yellowBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 74px;
-  padding-bottom: 72px;
+  width: 100%;
+  background-color: var(--yellow-color);
+  border-radius: 8px;
+  padding: 32px 40px;
+  gap: 10px;
+  margin-top: 72px;
 }
 
-.whatWeDoCardBox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-bottom: 36px;
-}
+@media (max-width: 360px) {
+  .yellowBox {
+    margin-top: 32px;
+    padding: 24px 16px;
+  }
 
-.whatWeDoImg {
-  position: absolute;
-  right: 0;
-  top: -100px;
+  .mainBox {
+    padding: 32px 16px 56px;
+    height: unset;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .imageSmall {
+    display: block;
+    position: absolute;
+    top: 972px;
+  }
+
+  .textBox {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .rightBox {
+    position: unset;
+    margin-bottom: 46px;
+  }
+
+  .title {
+    margin-bottom: 14px;
+    text-align: start;
+  }
+
+  .subtitle {
+    margin-bottom: 14px;
+  }
+
+  .marketingContainer {
+    padding-top: 54px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+  }
+
+  .marketingTextBox {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .marketingCardBox {
+    gap: 32px;
+  }
+
+  .sliderContainer {
+    gap: 26px;
+    padding-top: 38px;
+    padding-bottom: 136px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .sliderButtonBox {
+    position: absolute;
+    top: 200px;
+  }
+
+  .whatWeDoCardBox {
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+
+  .whatWeDoImg {
+    display: none;
+  }
+
+  .middleBox {
+    border-radius: 0;
+    padding: 54px 16px 48px;
+  }
+
+  .sliderPaymentContainer {
+    gap: 34px;
+    padding-top: 54px;
+    padding-bottom: 48px;
+  }
+
+  .whiteTextContainer {
+    padding: 54px 16px 52px;
+  }
+
+  .footerContainer {
+    padding: 0 16px;
+  }
 }

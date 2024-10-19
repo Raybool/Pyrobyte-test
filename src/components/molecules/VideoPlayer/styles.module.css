@@ -17,3 +17,9 @@
 .playButton:hover {
   transform: scale(1.375);
 }
+
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+  }
+}

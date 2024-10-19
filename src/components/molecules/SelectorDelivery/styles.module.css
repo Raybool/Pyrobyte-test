@@ -9,13 +9,9 @@
   display: flex;
   flex-direction: column;
   background-color: var(--switch-color);
-  font-family: 'Intro Book';
-  font-size: 12px;
-  line-height: 24px;
-  align-items: center;
   flex: 1;
-  color: var(--subtext-color);
   justify-content: flex-start;
+  align-items: center;
 }
 
 .button:hover {
@@ -45,4 +41,17 @@
   border-radius: 0 8px 8px 0;
   border: 2px solid var(--light-blue-color);
   border-left: 0;
+}
+
+.text {
+  font-family: 'Intro Book';
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--subtext-color);
+}
+
+@media (max-width: 360px) {
+  .text {
+    display: none;
+  }
 }

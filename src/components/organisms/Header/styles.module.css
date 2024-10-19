@@ -11,3 +11,9 @@
   background-color: var(--background-color);
   z-index: 1000;
 }
+
+@media (max-width: 360px) {
+  .container {
+    padding: 12px 16px;
+  }
+}

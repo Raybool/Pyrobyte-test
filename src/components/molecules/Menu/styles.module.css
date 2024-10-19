@@ -37,3 +37,9 @@
 .link:hover {
   opacity: 50%;
 }
+
+@media (max-width: 360px) {
+  .container {
+    flex: 1;
+  }
+}

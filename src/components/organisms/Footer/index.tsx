@@ -15,15 +15,18 @@ import { menuLinks, servicesLinks } from './constants';
 export const Footer: React.FC = () => (
   <div className={styles.container}>
     <div className={styles.about}>
-      <div className={styles.mapLine}>
-        <MapLine />
-      </div>
       <p className={styles.title}>About Whoosh</p>
 
-      <p className="txt-small">
-        Express delivery of documents and parcels for organizations, express
-        delivery of correspondence, purchases and other goods
-      </p>
+      <div className={styles.textBox}>
+        <div className={styles.mapLine}>
+          <MapLine />
+        </div>
+
+        <p className="txt-small">
+          Express delivery of documents and parcels for organizations, express
+          delivery of correspondence, purchases and other goods
+        </p>
+      </div>
     </div>
 
     <div className={styles.menusBox}>
@@ -45,8 +48,7 @@ export const Footer: React.FC = () => (
         </div>
 
         <p className="txt-small">
-          2545 W. Diversey Ave.
-          <br /> 3rd Floor Chicago, IL 60647
+          2545 W. Diversey Ave. 3rd Floor Chicago, IL 60647
         </p>
       </div>
 
