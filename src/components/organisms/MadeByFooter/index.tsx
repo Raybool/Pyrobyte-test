@@ -5,12 +5,16 @@ import { IconButton } from '@/components/atoms/buttons/IconButton';
 import { PureByte } from '@/components/atoms/icons/PureBite';
 import { PureByteSmall } from '@/components/atoms/icons/PureByteSmall';
 import { Shield } from '@/components/atoms/icons/Shield';
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './styles.module.css';
 
 export const MadeByFooter: React.FC = () => {
-  const { current: windowWidth } = useRef(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(window?.innerWidth);
+  }, []);
 
   if (windowWidth <= 360) {
     return (

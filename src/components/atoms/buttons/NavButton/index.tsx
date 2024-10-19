@@ -1,6 +1,5 @@
 import { NavigationArrow } from '@/components/atoms/icons/NavigationArrow';
 import React from 'react';
-import { useSwiper } from 'swiper/react';
 
 import styles from './styles.module.css';
 

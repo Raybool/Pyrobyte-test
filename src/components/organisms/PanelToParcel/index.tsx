@@ -11,9 +11,7 @@ import React, { useState } from 'react';
 
 import styles from './styles.module.css';
 
-type Props = {};
-
-export const PanelToParcel: React.FC<Props> = () => {
+export const PanelToParcel: React.FC = () => {
   const [typeDelivery, setTypeDelivery] = useState<TypeDelivery>('medium');
 
   const formik = useFormik({
@@ -22,7 +20,7 @@ export const PanelToParcel: React.FC<Props> = () => {
       dropLocation: '502 86th St, Brooklyn, NY 11209',
       typeDelivery,
     },
-    onSubmit(values, formikHelpers) {},
+    onSubmit: () => console.log(),
   });
 
   return (

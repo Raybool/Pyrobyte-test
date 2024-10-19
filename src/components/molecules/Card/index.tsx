@@ -1,4 +1,3 @@
-import { Box } from '@/components/atoms/Box';
 import { Url } from '@/types';
 import Link from 'next/link';
 import React from 'react';
@@ -14,7 +13,7 @@ type Props = {
 
 export const Card: React.FC<Props> = ({ title, Icon, text }) => (
   <div className={styles.container}>
-    <h3 className={!!Icon ? styles.icon : undefined}>{title}</h3>
+    <h3 className={styles.icon}>{title}</h3>
 
     <Icon />
 

@@ -23,12 +23,16 @@ import { MadeByFooter } from '@/components/organisms/MadeByFooter';
 import { PanelToParcel } from '@/components/organisms/PanelToParcel';
 import { sliderData, sliderDataPayment } from '@/constants/ui';
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './styles.module.css';
 
 export const Home: React.FC = () => {
-  const { current: windowWidth } = useRef(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(window?.innerWidth);
+  }, []);
 
   return (
     <div className={styles.container}>

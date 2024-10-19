@@ -6,13 +6,18 @@ import { Close } from '@/components/atoms/icons/Close';
 import { CityHolder } from '@/components/molecules/CityHolder';
 import { InputSearch } from '@/components/molecules/InputSearch';
 import Link from 'next/link';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './styles.module.css';
 
 export const DropDownMenu: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
-  const { current: windowHeight } = useRef(window.innerHeight);
+
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    setWindowHeight(window?.innerHeight);
+  }, []);
 
   return (
     <div className={styles.container}>

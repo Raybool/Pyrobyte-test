@@ -7,12 +7,16 @@ import { Profile } from '@/components/atoms/icons/Profile';
 import { CityHolder } from '@/components/molecules/CityHolder';
 import { DropDownMenu } from '@/components/molecules/DropDownMenu';
 import { InputSearch } from '@/components/molecules/InputSearch';
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './styles.module.css';
 
 export const Header: React.FC = () => {
-  const { current: windowWidth } = useRef(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(window?.innerWidth);
+  }, []);
 
   if (windowWidth <= 360) {
     return (

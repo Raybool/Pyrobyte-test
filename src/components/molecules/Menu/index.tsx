@@ -17,7 +17,7 @@ export const Menu: React.FC<Props> = ({ title, links }) => (
 
     <div className={styles.linksBox}>
       {links.map(({ href, title }) => (
-        <Link className={styles.link} href={href}>
+        <Link key={`${href} ${title}`} className={styles.link} href={href}>
           {title}
         </Link>
       ))}
